@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+:root {
+    --very-light-red: hsl(13, 100%, 72%);
+    --light-red: hsl(353, 100%, 62%);
+    --very-light-blue: hsl(206, 100%, 72%);
+    --light-blue: hsl(245, 100%, 72%);
+    --very-dark-gray-blue: hsl(237, 17%, 21%);
+    --very-dark-desaturated-blue: hsl(237, 23%, 32%);
+    --very-dark-desaturated-blue-transparent: rgba(63, 65, 100, 0.08);
+    --white: #fff;
+    --font-ubuntu: 'Ubuntu', sans-serif;
+    --font-overpass: 'Overpass', sans-serif;
+}
+
+body {
+   /* background-color: #badc58; */
+   background: url("images/droplet.jpg") 50% 50%, linear-gradient(to right, var(--very-light-blue), var(--light-blue)) ;
+   /* background: linear-gradient(to right, var(--very-light-blue), var(--light-blue)); */
+}
+
+
+/* nav {
+    height: 50%;
+    border-bottom: 1px solid grey;
+} */
+
+.container {
+    text-align: center;
+    /* border: 2px solid black; */
+    padding: 0px 30px 30px 30px ;
+    width: 40%;
+    margin: auto;
+    margin-top: 15%;
+    background-color: white;
+    box-shadow: 0px 0px 25px 5px var(--very-dark-gray-blue);
+    border-radius: 20px;
+}
+
+.box {
+    /* border: 2px solid grey; */
+    padding: 25px 25px;
+    border-radius: 5px 45px 5px 5px;
+    background-color: whitesmoke;
+}
+.quotes {
+    font-size: 25px;
+}
+
+.author {
+    margin-top: 5px;
+font-size: 18px;
+}
+
+.btn {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px 0px;
+    border-radius: 5px;
+    border: none;
+    /* background-color: green; */
+    background: linear-gradient(to right, var(--very-light-blue), var(--light-blue));
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.btn:hover {
+    /* background-color: grey; */
+    background: linear-gradient(to right, var(--very-light-blue), var(--light-red));
+
+}
+
+
+.tweet {
+    width: 40px;
+    cursor: pointer;
+}
+.tweet:hover{
+    animation: rot 1s linear;
+}
+
+@keyframes rot {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    /* body {
+        background-color: red;
+    }   */
+    .container {
+        width: 60%;
+    }
+}
+@media screen and (max-width: 500px) {
+    /* body {
+        background-color: green;
+    }   */
+    .container {
+        width: 80%;
+    }
+}
