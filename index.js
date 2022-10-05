@@ -14,8 +14,8 @@ const tweetFunction = () => {
 }
 
 const getNewQuotes = () => {
-    let rand = Math.floor(Math.random() * 10);
-    // console.log(rand);
+    let rand = Math.floor(Math.random() * 1640);
+    console.log(rand);
     // console.log(realdata[rand].text);
    // console.log(realdata[rand].author);
    quotesdata = realdata[rand]
@@ -30,7 +30,7 @@ const api = "https://type.fit/api/quotes";
     try {
         let data = await fetch(api);
         realdata = await data.json()
-
+        // console.log(realdata);
     getNewQuotes();
         // console.log(realdata[0].text);
         // console.log(realdata[0].author);
